@@ -8,3 +8,6 @@ plugins:
 ## solarized variant (dark/light)
 solarized:
   theme:     dark
+
+title: PreStage README Test
+description: testing out layout and formatting of README for PreStage QA script
