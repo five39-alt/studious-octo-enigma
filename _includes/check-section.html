@@ -1,0 +1,12 @@
+{% if include.type == "check-section" or include.type == "check-section-sub" %}
+  {% assign check-sections = site.check-section | where:"check-section-id", include.check-section-id %}
+{% endif %}
+
+{% for check-section in check-sections %}
+  {% if include.type != "check-section-sub" %}
+    <h2>{{ check-section.title }}</h2>
+  {% elsif include.type == "check-section-sub" %}
+    ### {{ check-section.title }}
+  {% endif %}
+  {{ check-section.content }}
+{% endfor %}
