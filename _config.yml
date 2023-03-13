@@ -1,13 +1,62 @@
+title: "PreStage README Test"
+description: "testing out layout and formatting of README for PreStage QA script"
+# url: https://five39-alt.github.io # site url
+baseurl: "/studious-octo-enigma" # apply repo name if use it under gh-pages branch
+repo: https://github.com/five39-alt/studious-octo-enigma
+repo: https://github.com/five39-alt/PreStageQA-Sectra
+comments: false
+
+# Build settings
+permalink:   "/:title"
+
+# Author settings
+author:
+  name     : "Gloria O"
+
 timezone:    Europe/London
+future:      false
 remote_theme: pages-themes/hacker@v0.2.0
 
 plugins:
   - jemoji
   - jekyll-remote-theme # add this line to the plugins list if you already have one
-
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+ 
 ## solarized variant (dark/light)
 solarized:
   theme:     dark
 
-title: PreStage README Test
-description: testing out layout and formatting of README for PreStage QA script
+kramdown:
+  ## for german: "sbquo,lsquo,bdquo,ldquo"
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+collections:
+  check-section:
+  posts:
+    output          : true
+    permalink       : "/:collection/:title"
+    
+kramdown:
+  toc_levels:     1..3
+  
+# social settings
+og_locale: "en_GB"
+
+exclude: [
+  "vendor", 
+  "Gemfile", 
+  "Gemfile.lock", 
+  "README.md", 
+  "LICENSE.txt", 
+  "Rakefile", 
+  "netlify.toml",
+  "reveal.js/test",
+  "reveal.js/index.html",
+  "reveal.js/README.md",
+  "reveal.js/bower.json",
+  "reveal.js/Gruntfile.js",
+  "reveal.js/CONTRIBUTING.md",
+  "reveal.js/LICENSE",
+  "reveal.js/package.json"
+]
