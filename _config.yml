@@ -15,7 +15,7 @@ author: "Gloria O"
 timezone:    Europe/London
 future:      false
 remote_theme: pages-themes/cayman@v0.2.0
-#remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
 
 collections:
   check-section:
@@ -32,11 +32,6 @@ plugins:
 ## solarized variant (dark/light)
 solarized:
   theme:     dark
-
-kramdown:
-  ## for german: "sbquo,lsquo,bdquo,ldquo"
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  toc_levels:     1..3
 
 # social settings
 og_locale: "en_GB"
