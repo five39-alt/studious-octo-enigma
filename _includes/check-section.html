@@ -4,7 +4,7 @@
 
 {% for check in check-sections %}
   {% if include.type != "check-section-sub" %}
-    <h2>{{ check.title }}</h2>
+<h2>{{ check.title }}</h2>
   {% elsif include.type == "check-section-sub" %}
     ### {{ check.title }}
   {% endif %}
