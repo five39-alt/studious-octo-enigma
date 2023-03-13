@@ -1,4 +1,22 @@
 ---
 layout: default
-title: Readme Posts like a boss
+title: Readme like a boss
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+    <h1>Revision History</h1>
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    {% include footer.html %}
+  </body>
+</html>
