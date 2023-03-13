@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myReadmeNavbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>                       
+      </button>
+      <a class="navbar-brand" href="/" style="margin-top: 2px; margin-bottom: 3px">PreStage QA README</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myReadmeNavbar" style="margin-top: 2px">
+      <ul class="nav navbar-nav">
+        <li><a class="nav-item nav-link {% if page.title == 'Getting Started' %}active{% endif %}" href="#">Home</a></li>
+        <li><a class="nav-item nav-link {% if page.title == 'Revision History' %}active{% endif %}" href="#">Revision History</a></li>
+        <li><a class="nav-item nav-link {% if page.title == 'Some Basic Info' %}active{% endif %}" href="#">Some Basic Info</a></li>
+        <li><a class="nav-item nav-link {% if page.title == 'Nice to Know' %}active{% endif %}" href="#">Nice to Know</a></li>
+        <li class="dropdown">
+          <a class="nav-item nav-link {% if page.title == 'Check Details' %}active{% endif %}" class="dropdown-toggle" data-toggle="dropdown" href="/check-deets/">Checks <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">General</a></li>
+            <li><a href="#">PACS Core</a></li>
+            <li><a href="#">PACS App</a></li>
+            <li><a href="#">Jboss</a></li>
+            <li><a href="#">Cluster</a></li>
+            <li><a href="#">Path</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
