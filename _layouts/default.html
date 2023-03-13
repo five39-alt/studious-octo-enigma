@@ -10,7 +10,7 @@
 {% seo %}
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
 
     <header>
       <div class="container">
@@ -28,11 +28,21 @@
         </section>
       </div>
     </header>
-
+    
+    {% include nav.html %}
+    
     <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-12 col-md-9">
+          <section id="main_content">
+            {{ content }}
+          </section>
+        </div>
+        <div class="col-md-3 d-none d-md-block" id="sidebar">
+          <nav id="toc" data-toggle="toc" class="sticky-top" style="z-index:1"></nav>
+        </div>
+      </div>
     </div>
+    <!--{% include footer.html %}-->
   </body>
 </html>
