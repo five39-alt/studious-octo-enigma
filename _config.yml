@@ -15,7 +15,8 @@ author:
 
 timezone:    Europe/London
 future:      false
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
+#remote_theme: pages-themes/hacker@v0.2.0
 
 plugins:
   - jemoji
