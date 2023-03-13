@@ -1,4 +1,4 @@
-title: "PreStage README Test"
+title: "PreStage README"
 description: "testing out layout and formatting of README for PreStage QA script"
 # url: https://five39-alt.github.io # site url
 baseurl: "/studious-octo-enigma" # apply repo name if use it under gh-pages branch
@@ -10,8 +10,7 @@ comments: false
 permalink:   "/:title"
 
 # Author settings
-author:
-  name     : "Gloria O"
+author: "Gloria O"
 
 timezone:    Europe/London
 future:      false
