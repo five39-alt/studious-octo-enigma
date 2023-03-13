@@ -4,19 +4,27 @@ title: Readme like a boss
 ---
 
 <!DOCTYPE html>
-<html lang="en">
   
   <body>
     {% include nav.html %}
+    <h1>Overview</h1>
+    <p>some text here</p>
+    <ul>
+      {% for pages in site.pages %}
+        <li>
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
     <h1>Revision History</h1>
     <ul>
         {% for post in site.posts %}
           <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </li>
         {% endfor %}
       </ul>
 
-    {% include footer.html %}
+    <!--{% include footer.html %}-->
   </body>
 </html>
