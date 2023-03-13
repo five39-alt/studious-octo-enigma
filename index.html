@@ -10,9 +10,9 @@ title: Readme like a boss
     <h1>Overview</h1>
     <p>some text here</p>
     <ul>
-      {% for pages in site.pages %}
+      {% for page in site.pages %}
         <li>
-          <a href="{{ page.url }}">{{ page.title }}</a>
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
         </li>
       {% endfor %}
     </ul>
