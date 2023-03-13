@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Version 1.7 of the QA_PreStage Script!"
+title:  "Version 1.7 of the QA_PreStage Script"
+category: revision history
+tag: v1.7
 ---
 
 [# Welcome to {{ post.title }}]: #
