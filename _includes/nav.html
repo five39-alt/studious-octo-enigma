@@ -1,39 +1,36 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-expand-md bg-dark-subtle" data-bs-theme="dark">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myReadmeNavbar"
-        aria-controls="myReadmeNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ '/' | relative_url }}" style="margin-top: 2px; margin-bottom: 3px">PreStage QA
-        README</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myReadmeNavbar" style="margin-top: 2px">
-      <ul class="nav navbar-nav">
-        <li><a class="nav-item nav-link {% if page.title == 'Getting Started' %}active{% endif %}"
+    <a class="navbar-brand" href="{{ '/' | relative_url }}" style="margin-top: 2px; margin-bottom: 3px">PreStage QA
+      README</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myReadmeNavbar"
+      aria-controls="myReadmeNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myReadmeNavbar">
+      <div class="navbar-nav">
+        <li><a class="nav-item nav-link {% if page.title == 'Readme like a boss' %}active{% endif %}"
             href="{{ '/' | relative_url }}">Home</a></li>
         <li><a class="nav-item nav-link {% if page.title == 'Revision History' %}active{% endif %}"
-            href="{{ '/' | relative_url }}">Revision History</a></li>
-        <li><a class="nav-item nav-link {% if page.title == 'Some Basic Info' %}active{% endif %}"
-            href="{{ '/' | relative_url }}">Some Basic Info</a></li>
-        <li><a class="nav-item nav-link {% if page.title == 'Nice to Know' %}active{% endif %}"
-            href="{{ '/' | relative_url }}">Nice to Know</a></li>
+            href="{{ '/rev-history' | relative_url }}">Revision History</a></li>
+        <li><a class="nav-item nav-link disabled {% if page.title == 'Basic Info' %}active{% endif %}"
+            href="{{ '/basic-info' | relative_url }}">Getting Started</a></li>
+        <li><a class="nav-item nav-link disabled {% if page.title == 'Nice to Know' %}active{% endif %}"
+            href="{{ '/nice-to-know' | relative_url }}">Useful Info</a></li>
         <li><a class="nav-item nav-link {% if page.title == 'Check Details' %}active{% endif %}"
             href="{{ '/check-deets' | relative_url }}">Checks</a></li>
-        <!-- <li class="dropdown">
-          <a class="nav-item nav-link {% if page.title == 'Check Details' %}active{% endif %}" class="dropdown-toggle" data-toggle="dropdown" href="{{ '/check-deets' | relative_url }}">Checks <span class="caret"></span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if page.title == 'Check Details' %}active{% endif %}"
+            data-bs-toggle="dropdown" aria-expanded="false" href="{{ '/check-deets' | relative_url }}">Check Details</a>
           <ul class="dropdown-menu">
-            <li><a href="#">General</a></li>
-            <li><a href="#">PACS Core</a></li>
-            <li><a href="#">PACS App</a></li>
-            <li><a href="#">Jboss</a></li>
-            <li><a href="#">Cluster</a></li>
-            <li><a href="#">Path</a></li>
+            <li><a class="dropdown-item" href="#">General</a></li>
+            <li><a class="dropdown-item" href="#">PACS Core</a></li>
+            <li><a class="dropdown-item" href="#">PACS App</a></li>
+            <li><a class="dropdown-item" href="#">Jboss</a></li>
+            <li><a class="dropdown-item" href="#">Cluster</a></li>
+            <li><a class="dropdown-item" href="#">Path</a></li>
           </ul>
-        </li> -->
-      </ul>
+        </li>
+      </div>
     </div>
   </div>
 </nav>
