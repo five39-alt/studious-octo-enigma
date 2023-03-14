@@ -7,7 +7,7 @@ last_modified_at: 2023-03-12
 
 {% include check-section.html type="check-section" check-section-id="overview" %}
 
-{% include check-section.html type="check-section" check-section-id="general-checks" %}
+{% include check-section.html type="check-section" check-section-id="misc-checks" %}
 
 {% include check-section.html type="check-section" check-section-id="pacs-core-checks" %}
 
