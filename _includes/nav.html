@@ -10,15 +10,15 @@
       <div class="navbar-nav">
         <li><a class="nav-item nav-link {% if page.title == 'Readme like a boss' %}active{% endif %}"
             href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a class="nav-item nav-link {% if page.title == 'Revision History' %}active{% endif %}"
-            href="{{ '/rev-history' | relative_url }}">Revision History</a></li>
         <li><a class="nav-item nav-link disabled {% if page.title == 'Basic Info' %}active{% endif %}"
             href="{{ '/basic-info' | relative_url }}">Getting Started</a></li>
         <li><a class="nav-item nav-link disabled {% if page.title == 'Nice to Know' %}active{% endif %}"
             href="{{ '/nice-to-know' | relative_url }}">Useful Info</a></li>
+        <li><a class="nav-item nav-link {% if page.title == 'Revision History' %}active{% endif %}"
+            href="{{ '/rev-history' | relative_url }}">Revision History</a></li>            
         <li><a class="nav-item nav-link {% if page.title == 'Check Details' %}active{% endif %}"
             href="{{ '/check-deets' | relative_url }}">Checks</a></li>
-        <li class="nav-item dropdown">
+<!--         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle {% if page.title == 'Check Details' %}active{% endif %}"
             data-bs-toggle="dropdown" aria-expanded="false" href="{{ '/check-deets' | relative_url }}">Check Details</a>
           <ul class="dropdown-menu">
@@ -29,7 +29,7 @@
             <li><a class="dropdown-item" href="#">Cluster</a></li>
             <li><a class="dropdown-item" href="#">Path</a></li>
           </ul>
-        </li>
+        </li> -->
       </div>
     </div>
   </div>
