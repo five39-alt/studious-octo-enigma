@@ -1,5 +1,5 @@
 ---
-title: Check Details Overview
+title: Overview
 check-section-id: overview
 ---
 
