@@ -2,3 +2,30 @@
 ---
 
 @import "{{ site.theme }}";
+
+/*My custom CSS*/
+#main_content table tbody tr td {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 64em) {
+    .main-content {
+        max-width: 100%;
+    }
+}
+
+table td:first-child {
+    min-width: 125px;
+    width: 125px;
+    text-align: left;
+}
+
+table {
+    display: table
+}
+
+table>thead>tr>th:nth-child(n+4) {
+    /* min-width: 35px; */
+    width: 2%;
+    text-align: center;
+}
