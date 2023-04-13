@@ -19,4 +19,6 @@ last_modified_at: 2023-03-12
 
 {% include check-section.html type="check-section" check-section-id="path-checks" %}
 
+{% include check-section.html type="check-section" check-section-id="sms-checks" %}
+
 {% include check-section.html type="check-section" check-section-id="ris-checks" %}
